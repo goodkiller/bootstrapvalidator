@@ -753,7 +753,7 @@
 
                             that.updateStatus(updateAll ? $f.attr('data-bv-field') : $f, isValid ? that.STATUS_VALID : that.STATUS_INVALID, v);
 
-                            if (isValid && that._submitIfValid === true) {
+                            if (isValid && that._submitIfValid === true && v == 'remote') {
                                 // If a remote validator returns true and the form is ready to submit, then do it
                                 that._submit();
                             }
